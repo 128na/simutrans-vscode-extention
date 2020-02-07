@@ -1,0 +1,1 @@
+# simutrans-vscode-extention
