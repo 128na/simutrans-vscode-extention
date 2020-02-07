@@ -1,52 +1,52 @@
 {
-    "name": "simutrans-dat",
-    "displayName": "simutrans-dat",
-    "description": "",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.41.0"
-    },
-    "categories": [
-        "Programming Languages",
-        "Snippets"
-    ],
-    "activationEvents": [
-        "onLanguage:dat"
-    ],
-    "main": "./extension.js",
-    "contributes": {
-        "languages": [
-            {
-                "id": "dat",
-                "aliases": [
-                    "dat",
-                    "simutrans_dat"
-                ],
-                "extensions": [
-                    ".dat"
-                ],
-                "configuration": "./language-configuration.json"
-            }
+  "name": "simutrans-dat",
+  "displayName": "simutrans-dat",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onLanguage:dat"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "dat",
+        "aliases": [
+          "dat",
+          "simutrans_dat"
         ],
-        "grammars": [
-            {
-                "language": "dat",
-                "scopeName": "source.dat",
-                "path": "./syntaxes/simutrans_dat.tmLanguage.json"
-            }
+        "extensions": [
+          ".dat"
         ],
-        "snippets": [
-            {
-                "language": "dat",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    },
-    "scripts": {
-        "generate:keys": "node ./src/generate_defined_keys.js",
-        "generate:dat": "node ./src/generate_example_dat.js"
-    },
-    "devDependencies": {
-        "alpha-sort": "^3.0.0"
-    }
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dat",
+        "scopeName": "source.dat",
+        "path": "./syntaxes/simutrans_dat.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "dat",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "scripts": {
+    "generate:keys": "node ./src/generate_defined_keys.js",
+    "generate:dat": "node ./src/generate_example_dat.js"
+  },
+  "devDependencies": {
+    "alpha-sort": "^3.0.0"
+  }
 }
