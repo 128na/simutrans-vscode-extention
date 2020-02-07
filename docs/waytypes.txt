@@ -1,0 +1,12 @@
+water
+tram_track
+track
+track
+road
+road
+power
+narrowgauge_track
+monorail_track
+maglev_track
+electrified_track
+air

@@ -1,0 +1,11 @@
+Basement
+Borders
+ClimateTexture
+Fence
+LightTexture
+Marker
+Outside
+ShoreTrans
+Slopes
+SlopeTrans
+Water

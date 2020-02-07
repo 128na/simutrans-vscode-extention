@@ -1,0 +1,1061 @@
+obj=building
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+noInfo=
+dims=
+# res, com, ind
+type=res
+level=
+clusters=0
+noConstruction=0
+needs_ground=1
+climates=
+backImage[0][0][0][0][0]=image.0.0
+---
+obj=building
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+noInfo=
+dims=
+# stop, extension, depot, habour
+type=stop
+extension_building=0
+enables_pax=1
+enables_post=1
+enables_ware=1
+level=
+waytype=
+noConstruction=0
+needs_ground=1
+climates=
+allow_underground=2
+cursor=image.0.0
+icon=> image.0.0
+backImage[0][0][0][0][0]=image.0.0
+---
+obj=building
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+noInfo=
+dims=
+# mon, cur
+type=mon
+level=
+passengers=
+build_time=100
+chance=100
+noConstruction=0
+needs_ground=1
+climates=
+backImage[0][0][0][0][0]=image.0.0
+---
+obj=building
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+noInfo=
+dims=
+type=tow
+noConstruction=0
+needs_ground=1
+climates=
+backImage[0][0][0][0][0]=image.0.0
+---
+obj=building
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+noInfo=
+dims=
+type=hq
+hq_level=0
+noConstruction=0
+needs_ground=1
+climates=
+backImage[0][0][0][0][0]=image.0.0
+---
+obj=factory
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+location=Land
+distributionWeight=1
+productivity=320
+range=300
+pax_level=35
+inputGood[0]=
+inputCapacity[0]=
+inputSupplier[0]=
+inputFactor[0]=
+outputGood[0]=
+outputCapacity[0]=
+OutputFactor[0]=
+mapColor=
+needs_ground=
+climates=
+dims=
+backImage[0][0][0][0][0]=image.0.1
+frontImage[0][0][0][0][0]=image.0.1
+# Parameters for permanent production increase
+expand_probability=
+expand_minimum=
+expand_range=
+expand_times=
+# Parameters for production increase due to passenger, mail, and electricity supply
+electricity_boost=1000
+electricity_amount=65535
+passenger_boost=0
+passenger_demand=65535
+mail_boost=0
+mail_demand=65535
+# Parameters specifying the factory emissions
+smoke=
+smokeTile=
+smokeOffset=
+smokeSpeed=
+# Specifying fields for the factory
+min_fields=10
+max_fields=36
+production_per_field=
+probability_to_spawn=10
+start_fields=8
+fields[0]=
+has_snow[0]=1
+storage_capacity[0]=100
+spawn_weight[0]=25
+---
+obj=field
+name=example
+copyright=example
+image[0]=image.0.0 # winter
+image[1]=image.0.1 # spring
+image[2]=image.0.2 # summer
+image[3]=image.0.3 # fall
+image[4]=image.0.4 # snow (has_snow=1)
+---
+obj=vehicle
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+waytype=
+freight=Passagiere
+payload=
+speed=
+cost=
+runningcost=
+power=
+gear=
+engine_type=
+weight=
+length=
+sound=
+smoke=
+from=
+loading_time=
+Constraint[Prev][0]=
+Constraint[Next][0]=
+emptyImage[s]=image.0.0
+emptyImage[n]=image.0.0
+emptyImage[e]=image.0.0
+emptyImage[w]=image.0.0
+emptyImage[sw]=image.0.0
+emptyImage[se]=image.0.0
+emptyImage[nw]=image.0.0
+emptyImage[ne]=image.0.0
+---
+obj=vehicle
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+waytype=
+freight=
+payload=
+speed=
+cost=
+runningcost=
+power=
+gear=
+engine_type=
+weight=
+length=
+sound=
+smoke=
+from=
+loading_time=
+Constraint[Prev][0]=
+Constraint[Next][0]=
+emptyImage[s]=image.0.0
+emptyImage[n]=image.0.0
+emptyImage[e]=image.0.0
+emptyImage[w]=image.0.0
+emptyImage[sw]=image.0.0
+emptyImage[se]=image.0.0
+emptyImage[nw]=image.0.0
+emptyImage[ne]=image.0.0
+# loaded vehicle image
+freightimagetype[0]=image.0.0
+freightimage[0][s]=image.0.0
+freightimage[0][n]=image.0.0
+freightimage[0][e]=image.0.0
+freightimage[0][w]=image.0.0
+freightimage[0][sw]=image.0.0
+freightimage[0][se]=image.0.0
+freightimage[0][nw]=image.0.0
+freightimage[0][ne]=image.0.0
+---
+obj=citycar
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+distributionWeight=1
+speed=100
+Image[S]=image.0.0
+Image[N]=image.0.0
+Image[E]=image.0.0
+Image[W]=image.0.0
+Image[SE]=image.0.0
+Image[NW]=image.0.0
+Image[NE]=image.0.0
+Image[SW]=image.0.0
+---
+obj=good
+name=example
+copyright=example
+metric=
+catg=
+value=
+speed_bonus=
+weight_per_unit=
+mapcolor=
+---
+obj=tunnel
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+waytype=
+cost=
+maintenance=
+topspeed=
+way=
+cursor=image.0.0
+icon=> image.0.0
+backImage[n]
+frontImage[n]
+backImage[s]
+frontImage[s]
+backImage[e]
+frontImage[e]
+backImage[w]
+frontImage[w]
+---
+obj=tunnel
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+waytype=
+cost=
+maintenance=
+topspeed=
+way=
+cursor=image.0.0
+icon=> image.0.0
+backImage[n]
+frontImage[n]
+backImage[s]
+frontImage[s]
+backImage[e]
+frontImage[e]
+backImage[w]
+frontImage[w]
+backImage[nl]
+backImage[nm]
+backImage[nr]
+frontImage[nl]
+frontImage[nm]
+frontImage[nr]
+backImage[sl]
+backImage[sm]
+backImage[sr]
+frontImage[sl]
+frontImage[sm]
+frontImage[sr]
+backImage[el]
+backImage[em]
+backImage[er]
+frontImage[el]
+frontImage[em]
+frontImage[er]
+backImage[wl]
+backImage[wm]
+backImage[wr]
+frontImage[wl]
+frontImage[wm]
+frontImage[wr]
+---
+obj=bridge
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+waytype=
+cost=
+maintenance=
+topspeed=
+max_weight=
+max_height=
+max_length=
+pillar_distance=
+pillar_asymmetric=
+cursor=image.0.0
+icon=> image.0.0
+backImage[NS]=image.0.0
+backImage[EW]=image.0.0
+backImage2[NS]=image.0.0
+backImage2[EW]=image.0.0
+backStart[N]=image.0.0
+backStart[W]=image.0.0
+backStart[S]=image.0.0
+backStart[E]=image.0.0
+backStart2[N]=image.0.0
+backStart2[W]=image.0.0
+backStart2[S]=image.0.0
+backStart2[E]=image.0.0
+backRamp[N]=image.0.0
+backRamp[W]=image.0.0
+backRamp[S]=image.0.0
+backRamp[E]=image.0.0
+backRamp2[N]=image.0.0
+backRamp2[W]=image.0.0
+backRamp2[S]=image.0.0
+backRamp2[E]=image.0.0
+backPillar[S]=image.0.0
+backPillar[W]=image.0.0
+backPillar2[S]=image.0.0
+backPillar2[W]=image.0.0
+frontImage[NS]=image.0.0
+frontImage[EW]=image.0.0
+frontImage2[NS]=image.0.0
+frontImage2[EW]=image.0.0
+frontStart[N]=image.0.0
+frontStart[W]=image.0.0
+frontStart[S]=image.0.0
+frontStart[E]=image.0.0
+frontStart2[N]=image.0.0
+frontStart2[W]=image.0.0
+frontStart2[S]=image.0.0
+frontStart2[E]=image.0.0
+frontRamp[N]=image.0.0
+frontRamp[W]=image.0.0
+frontRamp[S]=image.0.0
+frontRamp[E]=image.0.0
+frontRamp2[N]=image.0.0
+frontRamp2[W]=image.0.0
+frontRamp2[S]=image.0.0
+frontRamp2[E]=image.0.0
+frontPillar[S]=image.0.0
+frontPillar[W]=image.0.0
+frontPillar2[S]=image.0.0
+frontPillar2[W]=image.0.0
+---
+obj=way
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+waytype=
+cost=
+maintenance=
+topspeed=
+max_weight=
+system_type=
+cursor=image.0.0
+icon=> image.0.0
+image[s]=image.0.0
+image[w]=image.0.0
+image[n]=image.0.0
+image[e]=image.0.0
+image[ns]=image.0.0
+image[ew]=image.0.0
+image[se]=image.0.0
+image[sw]=image.0.0
+image[nw]=image.0.0
+image[ne]=image.0.0
+image[nsew]=image.0.0
+image[-]=image.0.0
+imageUp[12]=image.0.0
+imageUp[9]=image.0.0
+imageUp[3]=image.0.0
+imageUp[6]=image.0.0
+image[new]=image.0.0
+image[nse]=image.0.0
+image[sew]=image.0.0
+image[nsw]=image.0.0
+# optional double slope
+imageUp2[12]=image.0.0
+imageUp2[9]=image.0.0
+imageUp2[3]=image.0.0
+imageUp2[6]=image.0.0
+# optional diagonal
+diagonal[sw]=image.0.0
+diagonal[nw]=image.0.0
+diagonal[ne]=image.0.0
+diagonal[se]=image.0.0
+# optional switches
+image[new1]=image.0.0
+image[nse1]=image.0.0
+image[sew1]=image.0.0
+image[nsw1]=image.0.0
+image[new2]=image.0.0
+image[nse2]=image.0.0
+image[sew2]=image.0.0
+image[nsw2]=image.0.0
+---
+obj=way-object
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+waytype=
+cost=
+maintenance=
+topspeed=
+own_waytype=
+cursor=image.0.0
+icon=> image.0.0
+frontimage[s]=image.0.0
+frontimage[w]=image.0.0
+frontimage[n]=image.0.0
+frontimage[e]=image.0.0
+frontimage[ns]=image.0.0
+frontimage[ew]=image.0.0
+frontimage[se]=image.0.0
+frontimage[sw]=image.0.0
+frontimage[nw]=image.0.0
+frontimage[ne]=image.0.0
+frontimage[nsew]=image.0.0
+frontimage[-]=image.0.0
+frontimageUp[12]=image.0.0
+frontimageUp[9]=image.0.0
+frontimageUp[3]=image.0.0
+frontimageUp[6]=image.0.0
+frontimage[new]=image.0.0
+frontimage[nse]=image.0.0
+frontimage[sew]=image.0.0
+frontimage[nsw]=image.0.0
+# optional double slope
+frontimageUp2[12]=image.0.0
+frontimageUp2[9]=image.0.0
+frontimageUp2[3]=image.0.0
+frontimageUp2[6]=image.0.0
+# optional diagonal
+frontdiagonal[sw]=image.0.0
+frontdiagonal[nw]=image.0.0
+frontdiagonal[ne]=image.0.0
+frontdiagonal[se]=image.0.0
+backimage[s]=image.0.0
+backimage[w]=image.0.0
+backimage[n]=image.0.0
+backimage[e]=image.0.0
+backimage[ns]=image.0.0
+backimage[ew]=image.0.0
+backimage[se]=image.0.0
+backimage[sw]=image.0.0
+backimage[nw]=image.0.0
+backimage[ne]=image.0.0
+backimage[nsew]=image.0.0
+backimage[-]=image.0.0
+backimageUp[12]=image.0.0
+backimageUp[9]=image.0.0
+backimageUp[3]=image.0.0
+backimageUp[6]=image.0.0
+backimage[new]=image.0.0
+backimage[nse]=image.0.0
+backimage[sew]=image.0.0
+backimage[nsw]=image.0.0
+# optional double slope
+backimageUp2[12]=image.0.0
+backimageUp2[9]=image.0.0
+backimageUp2[3]=image.0.0
+backimageUp2[6]=image.0.0
+# optional diagonal
+backdiagonal[sw]=image.0.0
+backdiagonal[nw]=image.0.0
+backdiagonal[ne]=image.0.0
+backdiagonal[se]=image.0.0
+---
+obj=roadsign
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+cost=
+offset_left=14
+is_signal=1
+is_presignal=0
+free_route=0
+end_of_choose=0
+is_longblocksignal=0
+is_prioritysignal=0
+single_way=1
+min_speed=
+cursor=image.0.0
+icon=> image.0.0
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0
+image[4]=image.0.0
+image[5]=image.0.0
+image[6]=image.0.0
+image[7]=image.0.0
+# optional for non-electrified
+image[8]=image.0.0
+image[9]=image.0.0
+image[10]=image.0.0
+image[11]=image.0.0
+image[12]=image.0.0
+image[13]=image.0.0
+image[14]=image.0.0
+image[15]=image.0.0
+---
+obj=roadsign
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+cost=
+offset_left=14
+is_signal=1
+is_presignal=0
+free_route=0
+end_of_choose=0
+is_longblocksignal=0
+is_prioritysignal=0
+single_way=1
+min_speed=
+cursor=image.0.0
+icon=> image.0.0
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0
+image[4]=image.0.0
+image[5]=image.0.0
+image[6]=image.0.0
+image[7]=image.0.0
+# the blockage section ahead
+image[8]=image.0.0
+image[9]=image.0.0
+image[10]=image.0.0
+image[11]=image.0.0
+# optional for non-electrified
+image[12]=image.0.0
+image[13]=image.0.0
+image[14]=image.0.0
+image[15]=image.0.0
+image[16]=image.0.0
+image[17]=image.0.0
+image[18]=image.0.0
+image[19]=image.0.0
+image[20]=image.0.0
+image[21]=image.0.0
+image[22]=image.0.0
+image[23]=image.0.0
+---
+obj=roadsign
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+cost=
+offset_left=14
+is_private=
+single_way=
+free_route=
+min_speed=
+cursor=image.0.0
+icon=> image.0.0
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0
+---
+obj=tree
+name=example
+copyright=example
+distributionWeight=
+height=
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+image[4][0]=image.0.0
+---
+obj=ground_obj
+name=example
+copyright=example
+cost=
+distributionWeight=
+seasons=
+climates=
+trees_on_top=
+# for moving objects
+speed=
+waytype=
+image[0][0]=image.0.0
+# for moving objects
+image[s][0]=image.0.0
+image[e][0]=image.0.0
+image[se][0]=image.0.0
+image[sw][0]=image.0.0
+image[n][0]=image.0.0
+image[w][0]=image.0.0
+image[nw][0]=image.0.0
+image[ne][0]=image.0.0
+---
+obj=crossing
+name=example
+copyright=example
+sound=
+waytype[0]=
+waytype[1]=
+speed[0]=
+speed[1]=
+openImage[ns][0]=image.0.0
+front_openImage[ns][0]=image.0.0
+closedImage[ns][0]=image.0.0
+front_closedImage[ns][0]=image.0.0
+openImage[ew][0]=image.0.0
+front_openImage[ew][0]=image.0.0
+closedImage[ew][0]=image.0.0
+front_closedImage[ew][0]=image.0.0
+---
+obj=pedestrian
+name=example
+copyright=example
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+steps_per_frame=
+distributionWeight=
+Image[S]=image.0.0
+Image[E]=image.0.0
+Image[SE]=image.0.0
+Image[SW]=image.0.0
+Image[N]=image.0.0
+Image[W]=image.0.0
+Image[NW]=image.0.0
+Image[NE]=image.0.0
+---
+obj=smoke
+name=example
+copyright=example
+image[0]=image.0.0
+---
+obj=cursor
+# Query, Down, Up, Marked, Remove, Schedule, Baum, ShipDepotEW, ShipDepotNS, City, Undocumented, Slope, Mouse, Signal
+name=example
+copyright=example
+image[0]=image.0.0
+---
+obj=ground
+name=LightTexture
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+image[4][0]=image.0.0
+image[5][0]=image.0.0
+image[6][0]=image.0.0
+image[7][0]=image.0.0
+image[8][0]=image.0.0
+image[9][0]=image.0.0
+image[10][0]=image.0.0
+image[11][0]=image.0.0
+image[12][0]=image.0.0
+image[13][0]=image.0.0
+image[14][0]=image.0.0
+---
+obj=ground
+name=ShoreTrans
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+---
+obj=ground
+name=SlopeTrans
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+---
+obj=ground
+name=ClimateTexture
+# 0: water, 1: beach,desert 2: tropic, 3: mediterran, 4: temperate grass, 5: tundra, 6: rocky/barren, 7: snow
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+image[4][0]=image.0.0
+image[5][0]=image.0.0
+image[6][0]=image.0.0
+image[7][0]=image.0.0
+---
+obj=ground
+name=Water
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+image[4][0]=image.0.0
+image[5][0]=image.0.0
+---
+obj=ground
+name=Outside
+image[0][0]=image.0.0
+---
+obj=ground
+name=Borders
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+image[4][0]=image.0.0
+image[5][0]=image.0.0
+image[6][0]=image.0.0
+image[7][0]=image.0.0
+---
+obj=ground
+name=Marker
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+image[4][0]=image.0.0
+image[5][0]=image.0.0
+image[6][0]=image.0.0
+image[7][0]=image.0.0
+image[8][0]=image.0.0
+image[9][0]=image.0.0
+image[10][0]=image.0.0
+image[11][0]=image.0.0
+image[12][0]=image.0.0
+image[13][0]=image.0.0
+image[14][0]=image.0.0
+image[15][0]=image.0.0
+---
+obj=ground
+name=Fence
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+image[4][0]=image.0.0
+image[5][0]=image.0.0
+---
+obj=ground
+name=Basement
+image[0][0]=image.0.0
+image[1][0]=image.0.0
+image[2][0]=image.0.0
+image[3][0]=image.0.0
+image[4][0]=image.0.0
+image[5][0]=image.0.0
+image[6][0]=image.0.0
+image[7][0]=image.0.0
+image[8][0]=image.0.0
+image[9][0]=image.0.0
+image[10][0]=image.0.0
+image[11][0]=image.0.0
+image[12][0]=image.0.0
+image[13][0]=image.0.0
+image[14][0]=image.0.0
+image[15][0]=image.0.0
+image[16][0]=image.0.0
+image[17][0]=image.0.0
+image[18][0]=image.0.0
+image[19][0]=image.0.0
+image[20][0]=image.0.0
+image[21][0]=image.0.0
+---
+obj=menu
+name=GeneralTools
+# query tool
+image[0]=> image.0.0
+# demolition
+image[1]=> image.0.0
+# raise country
+image[2]=> image.0.0
+# lower land
+image[3]=> image.0.0
+# Land Movement Single Field
+image[4]=> image.0.0
+# Mark Shield
+image[5]=> image.0.0
+# Delete block reservation
+image[6]=> image.0.0
+# nonspecific cursor
+image[7]=> image.0.0
+# start city
+image[8]=> image.0.0
+# to plant a tree
+image[9]=> image.0.0
+# schedule maintenance
+image[10]=> image.0.0
+# Construction Map Editor
+image[11]=> image.0.0
+# link factory
+image[12]=> image.0.0
+# plants forest
+image[13]=> image.0.0
+# scheduled stop move
+image[14]=> image.0.0
+---
+obj=menu
+name=SimpleTools
+# pause
+image[0]=> image.0.0
+# fast forward
+image[1]=> image.0.0
+# Screenshot
+image[2]=> image.0.0
+# industry chain
+image[3]=> image.0.0
+# construction way reversed
+image[4]=> image.0.0
+# change player
+image[5]=> image.0.0
+# skip year
+image[6]=> image.0.0
+# zoom in
+image[7]=> image.0.0
+# zoom out
+image[8]=> image.0.0
+---
+obj=menu
+name=DialogTools
+# help
+image[0]=> image.0.0
+# settings
+image[1]=> image.0.0
+# relief map
+image[2]=> image.0.0
+# line management
+image[3]=> image.0.0
+# mesages
+image[4]=> image.0.0
+# finances
+image[5]=> image.0.0
+# player list
+image[6]=> image.0.0
+# display settings
+image[7]=> image.0.0
+# sound settings
+image[8]=> image.0.0
+# language settings
+image[9]=> image.0.0
+# player color settings
+image[10]=> image.0.0
+# coordinate jump window
+image[11]=> image.0.0
+# load
+image[12]=> image.0.0
+# save
+image[13]=> image.0.0
+# stops list
+image[14]=> image.0.0
+# vehicles list
+image[15]=> image.0.0
+# city list
+image[16]=> image.0.0
+# goods list
+image[17]=> image.0.0
+# factory list
+image[18]=> image.0.0
+# curiosities list
+image[19]=> image.0.0
+---
+obj=menu
+name=BarTools
+# menu Landscaping
+image[0]=> image.0.0
+# menu railway
+image[1]=> image.0.0
+# menu monorail / maglev
+image[2]=> image.0.0
+# menu tram
+image[3]=> image.0.0
+# menu road
+image[4]=> image.0.0
+# menu ships
+image[5]=> image.0.0
+# menu aircraft
+image[6]=> image.0.0
+# special menu
+image[7]=> image.0.0
+# menu list management
+image[8]=> image.0.0
+# unused
+image[9]=> image.0.0
+# landscaping southern slope
+image[10]=> image.0.0
+# landscaping north slope
+image[11]=> image.0.0
+# landscaping west slope
+image[12]=> image.0.0
+# landscaping eastern slope
+image[13]=> image.0.0
+# terrain tile high
+image[14]=> image.0.0
+# terrain tile down
+image[15]=> image.0.0
+# route demolition rail / tram
+image[16]=> image.0.0
+# route demolition monorail / maglev
+image[17]=> image.0.0
+# route demolition channel
+image[18]=> image.0.0
+# route demolition airport
+image[19]=> image.0.0
+# route demolition road
+image[20]=> image.0.0
+---
+obj=misc
+name=Construction
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0
+image[4]=image.0.0
+image[5]=image.0.0
+image[6]=image.0.0
+---
+obj=misc
+name=Sidewalk
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0
+image[4]=image.0.0
+image[5]=image.0.0
+image[6]=image.0.0
+image[7]=image.0.0
+image[8]=image.0.0
+image[9]=image.0.0
+image[10]=image.0.0
+image[11]=image.0.0
+image[12]=image.0.0
+image[13]=image.0.0
+image[14]=image.0.0
+---
+obj=misc
+name=TunnelTexture
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0
+image[4]=image.0.0
+image[5]=image.0.0
+image[6]=image.0.0
+image[7]=image.0.0
+image[8]=image.0.0
+image[9]=image.0.0
+image[10]=image.0.0
+image[11]=image.0.0
+image[12]=image.0.0
+---
+obj=misc
+name=PowerSource
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0
+image[4]=image.0.0
+image[5]=image.0.0
+---
+obj=misc
+name=PowerDest
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0
+---
+obj=symbol
+name=Seasons
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0
+---
+obj=symbol
+name=networksym
+image[0]=image.0.0
+---
+obj=symbol
+name=timelinesym
+image[0]=image.0.0
+---
+obj=symbol
+name=fastforwardsym
+image[0]=image.0.0
+---
+obj=symbol
+name=pausesym
+image[0]=image.0.0
+---
+obj=symbol
+name=BigLogo
+image[0]=image.0.0
+image[1]=image.0.0
+image[2]=image.0.0
+image[3]=image.0.0

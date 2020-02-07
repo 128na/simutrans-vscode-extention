@@ -1,0 +1,186 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "simutrans_dat",
+	"patterns": [
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#lines"
+		}
+	],
+	"repository": {
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.simutrans_dat",
+					"match": "^#.*"
+				},
+				{
+					"name": "comment.line.simutrans_dat",
+					"match": "^-+$"
+				}
+			]
+		},
+		"lines": {
+			"patterns": [
+				{
+					"match": "^([^=]+)(=> |=)?((\\d+)|([A-Za-z,]+)|(.+))?$",
+					"captures": {
+						"1": {
+							"patterns": [
+								{
+									"include": "#defined_keys"
+								},
+								{
+									"include": "#direction_and_number"
+								}
+							]
+						},
+						"2": {
+							"patterns": [
+								{
+									"include": "#equal"
+								}
+							]
+						},
+						"4": {
+							"patterns": [
+								{
+									"include": "#numeric"
+								}
+							]
+						},
+						"5": {
+							"patterns": [
+								{
+									"include": "#defined_values"
+								}
+							]
+						},
+						"6": {
+							"patterns": [
+								{
+									"include": "#general_value"
+								}
+							]
+						}
+					}
+				}
+			],
+			"repository": {
+				"numeric": {
+					"patterns": [
+						{
+							"name": "constant.numeric",
+							"match": "-?\\d+"
+						}
+					]
+				},
+				"defined_keys": {
+					"patterns": [
+						{
+							"name": "storage.type.defined_keys",
+							"match": "^([wW]eight_[pP]er_[uU]nit|[wW]eight|[wW]ay[tT]ype|[wW]ay|[vV]alue|[tT]ype|[tT]rees_[oO]n_[tT]op|[tT]opspeed|[sS]ystem_[tT]ype|[sS]torage_[cC]apacity|[sS]teps_[pP]er_[fF]rame|[sS]tart_[fF]ields|[sS]peed_[bB]onus|[sS]peed|[sS]pawn_[wW]eight|[sS]ound|[sS]moke[tT]ile|[sS]moke[sS]peed|[sS]moke[oO]ffset|[sS]moke|[sS]ingle_[wW]ay|[sS]easons|[rR]unning[cC]ost|[rR]etire_[yY]ear|[rR]etire_[mM]onth|[rR]ange|[pP]roductivity|[pP]roduction_[pP]er_[fF]ield|[pP]robability_[tT]o_[sS]pawn|[pP]ower|[pP]illar_[dD]istance|[pP]illar_[aA]symmetric|[pP]ayload|[pP]ax_[lL]evel|[pP]assengers|[pP]assenger_[dD]emand|[pP]assenger_[bB]oost|[oO]wn_[wW]ay[tT]ype|[oO]utput[gG]ood|[oO]utput[fF]actor|[oO]utput[cC]apacity|[oO]pen[iI]mage|[oO]ffset_[lL]eft|[oO]bj|[nN]o[iI]nfo|[nN]o[cC]onstruction|[nN]eeds_[gG]round|[nN]ame|[mM]in_[sS]peed|[mM]in_[fF]ields|[mM]etric|[mM]ax_[wW]eight|[mM]ax_[lL]ength|[mM]ax_[hH]eight|[mM]ax_[fF]ields|[mM]ap[cC]olor|[mM]aintenance|[mM]ail_[dD]emand|[mM]ail_[bB]oost|[lL]ocation|[lL]oading_[tT]ime|[lL]evel|[lL]ength|[iI]s_[sS]ignal|[iI]s_[pP]rivate|[iI]s_[pP]riority[sS]ignal|[iI]s_[pP]re[sS]ignal|[iI]s_[lL]ongblock[sS]ignal|[iI]ntro_[yY]ear|[iI]ntro_[mM]onth|[iI]nput[sS]upplier|[iI]nput[gG]ood|[iI]nput[fF]actor|[iI]nput[cC]apacity|[iI]mage[uU]p2|[iI]mage[uU]p|[iI]mage|[iI]con|[hH]q_[lL]evel|[hH]eight|[hH]as_[sS]now|[gG]ear|[fF]ront_[oO]pen[iI]mage|[fF]ront_[cC]losed[iI]mage|[fF]ront[sS]tart2|[fF]ront[sS]tart|[fF]ront[rR]amp2|[fF]ront[rR]amp|[fF]ront[pP]illar2|[fF]ront[pP]illar|[fF]ront[iI]mage[uU]p2|[fF]ront[iI]mage[uU]p|[fF]ront[iI]mage2|[fF]ront[iI]mage|[fF]ront[dD]iagonal|[fF]rom|[fF]reight[iI]mage[tT]ype|[fF]reight[iI]mage|[fF]reight|[fF]ree_[rR]oute|[fF]ields|[eE]xtension_[bB]uilding|[eE]xpand_[tT]imes|[eE]xpand_[rR]ange|[eE]xpand_[pP]robability|[eE]xpand_[mM]inimum|[eE]ngine_[tT]ype|[eE]nd_[oO]f_[cC]hoose|[eE]nables_[wW]are|[eE]nables_[pP]ost|[eE]nables_[pP]ax|[eE]mpty[iI]mage|[eE]lectricity_[bB]oost|[eE]lectricity_[aA]mount|[dD]istribution[wW]eight|[dD]ims|[dD]iagonal|[cC]ursor|[cC]ost|[cC]opyright|[cC]onstraint|[cC]lusters|[cC]losed[iI]mage|[cC]limates|[cC]hance|[cC]atg|[bB]uild_[tT]ime|[bB]ack[sS]tart2|[bB]ack[sS]tart|[bB]ack[rR]amp2|[bB]ack[rR]amp|[bB]ack[pP]illar2|[bB]ack[pP]illar|[bB]ack[iI]mage[uU]p2|[bB]ack[iI]mage[uU]p|[bB]ack[iI]mage2|[bB]ack[iI]mage|[bB]ack[dD]iagonal|[aA]llow_[uU]nderground)"
+						}
+					]
+				},
+				"defined_values": {
+					"patterns": [
+						{
+							"name": "storage.type.objs",
+							"match": "\\b(way-object|way|tunnel|tree|symbol|smoke|roadsign|pedestrian|misc|ground|good|field|factory|crossing|building|bridge)$"
+						},
+						{
+							"name": "storage.type.waytypes",
+							"match": "\\b(water|tram_track|track|track|road|road|power|narrowgauge_track|monorail_track|maglev_track|electrified_track|air)$"
+						},
+						{
+							"name": "storage.type.types",
+							"match": "\\b(wharf|tow|stop|station|shed|res|post|monorailstop|mon|ind|hq|hall|habour|extension|dock|depot|cur|com|carstop|busstop|airport)$"
+						},
+						{
+							"name": "storage.type.locations",
+							"match": "\\b(Land|City|Water)$"
+						},
+						{
+							"name": "storage.type.climinates",
+							"match": "\\b(desert|tropic|mediterran|temperate|tundra|rocky|arctic)\\b"
+						},
+						{
+							"name": "storage.type.misc",
+							"match": "\\b(PowerSource|PowerDest|Construction|Sidewalk|TunnelTexture)$"
+						},
+						{
+							"name": "storage.type.misc",
+							"match": "\\b(Basement|Borders|ClimateTexture|Fence|LightTexture|Marker|Outside|ShoreTrans|Slopes|SlopeTrans|Water)$"
+						}
+					]
+				},
+				"general_value": {
+					"patterns": [
+						{
+							"match": "[\\.,](-?\\d+)|((-?\\d+),)+?(-?\\d+)",
+							"captures": {
+								"1": {
+									"patterns": [
+										{
+											"include": "#numeric"
+										}
+									]
+								},
+								"2": {
+									"patterns": [
+										{
+											"include": "#numeric"
+										}
+									]
+								},
+								"3": {
+									"patterns": [
+										{
+											"include": "#numeric"
+										}
+									]
+								},
+								"4": {
+									"patterns": [
+										{
+											"include": "#numeric"
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				"direction_and_number": {
+					"patterns": [
+						{
+							"match": "\\[(-|[eE]|[eE]l|[eE]m|[eE]r|[eE][wW]|[nN]|[nN][eE]|[nN][eE][wW]|[nN][eE][wW]1|[nN][eE][wW]2|[nN]l|[nN]m|[nN]r|[nN][sS]|[nN][sS][eE]|[nN][sS][eE]1|[nN][sS][eE]2|[nN][sS][eE][wW]|[nN][sS][eE][wW]1|[nN][sS][eE][wW]2|[nN][sS][wW]|[nN][sS][wW]1|[nN][sS][wW]2|[nN][wW]|[sS]|[sS][eE]|[sS][eE][wW]|[sS][eE][wW]1|[sS][eE][wW]2|[sS]l|[sS]m|[sS]r|[sS][wW]|[wW]|[wW]l|[wW]m|[wW]r|\\d+)\\]",
+							"captures": {
+								"1": {
+									"patterns": [
+										{
+											"name": "variable.parameter.direction_and_number",
+											"match": ".+"
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				"equal": {
+					"patterns": [
+						{
+							"name": "keyword.operator.equal",
+							"match": "=> |="
+						}
+					]
+				}
+			}
+		}
+	},
+	"scopeName": "source.dat"
+}
