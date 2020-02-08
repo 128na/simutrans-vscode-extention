@@ -4,6 +4,11 @@ All notable changes to the "simutrans-dat-syntax" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.0.1]
 
 - Initial release
+
+## [0.0.2]
+
+- FIX: keywords with underscores (tram_truck, etc.) not highlighted.
+- ADD: symbol name syntax highlighting.

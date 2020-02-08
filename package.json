@@ -1,6 +1,6 @@
 {
   "name": "simutrans-dat-vscode-extention",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "128Na",
   "engines": {
     "vscode": "^1.41.0"

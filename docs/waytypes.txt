@@ -1,1 +1,1 @@
-road|track|tram_track|monorail_track|maglev_track|narrowgauge_track|water|air|power|electrified_track
+water|tram_track|track|road|power|narrowgauge_track|monorail_track|maglev_track|electrified_track|air
