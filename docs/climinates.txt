@@ -1,7 +1,1 @@
-desert
-tropic
-mediterran
-temperate
-tundra
-rocky
-arctic
+desert|tropic|mediterran|temperate|tundra|rocky|arctic

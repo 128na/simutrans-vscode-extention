@@ -1,0 +1,1 @@
+timelinesym|pausesym|networksym|fastforwardsym|Waren|TramStop|TrainStop|ShipStop|Seasons|Post|Passagiere|NewYear|NewWorld|MonorailStop|MessageOption|Message|Logo|InTown|Flags|Electricity|CarStop|BusStop|Builder|BigLogo|AirStop

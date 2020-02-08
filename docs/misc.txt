@@ -1,5 +1,1 @@
-PowerSource
-PowerDest
-Construction
-Sidewalk
-TunnelTexture 
+PowerSource|PowerDest|Construction|Sidewalk|TunnelTexture

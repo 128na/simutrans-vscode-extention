@@ -1,3 +1,1 @@
-Land
-City
-Water
+Land|City|Water
