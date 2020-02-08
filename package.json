@@ -1,19 +1,21 @@
 {
-  "name": "simutrans-dat",
-  "displayName": "simutrans-dat",
-  "description": "",
+  "name": "simutrans-dat-vscode-extention",
   "version": "0.0.1",
+  "publisher": "128Na",
   "engines": {
     "vscode": "^1.41.0"
   },
+  "license": "SEE LICENSE IN LICENSE file",
+  "displayName": "Simutrans Dat extention",
+  "description": "This extension provides syntax highlighting and snippets.",
   "categories": [
     "Programming Languages",
     "Snippets"
   ],
-  "activationEvents": [
-    "onLanguage:dat"
+  "keywords": [
+    "Simutrans",
+    "dat"
   ],
-  "main": "./extension.js",
   "contributes": {
     "languages": [
       {
