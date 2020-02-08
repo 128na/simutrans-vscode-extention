@@ -89,15 +89,15 @@
           "patterns": [
             {
               "name": "storage.type.objs",
-              "match": "\\b(way-object|way|tunnel|tree|symbol|smoke|roadsign|pedestrian|misc|ground|good|field|factory|crossing|building|bridge)$"
+              "match": "\\b(way-object|way|tunnel|tree|symbol|smoke|roadsign|pedestrian|misc|ground|good|field|factory|crossing|bridge|building)$"
             },
             {
               "name": "storage.type.waytypes",
-              "match": "\\b(water|tram_track|track|track|road|road|power|narrowgauge_track|monorail_track|maglev_track|electrified_track|air)$"
+              "match": "\\b(road|track|tram_track|monorail_track|maglev_track|narrowgauge_track|water|air|power|electrified_track)$"
             },
             {
               "name": "storage.type.types",
-              "match": "\\b(wharf|tow|stop|station|shed|res|post|monorailstop|mon|ind|hq|hall|habour|extension|dock|depot|cur|com|carstop|busstop|airport)$"
+              "match": "\\b(wharf|tow|stop|station|shed|res|post|monorailstop|mon|ind|hq|harbour|hall|habour|extension|depot|cur|com|carstop|busstop|airport)$"
             },
             {
               "name": "storage.type.locations",
@@ -112,8 +112,12 @@
               "match": "\\b(PowerSource|PowerDest|Construction|Sidewalk|TunnelTexture)$"
             },
             {
-              "name": "storage.type.misc",
+              "name": "storage.type.grounsd",
               "match": "\\b(Basement|Borders|ClimateTexture|Fence|LightTexture|Marker|Outside|ShoreTrans|Slopes|SlopeTrans|Water)$"
+            },
+            {
+              "name": "storage.type.symbols",
+              "match": "\\b(timelinesym|pausesym|networksym|fastforwardsym|Waren|TramStop|TrainStop|ShipStop|Seasons|Post|Passagiere|NewYear|NewWorld|MonorailStop|MessageOption|Message|Logo|InTown|Flags|Electricity|CarStop|BusStop|Builder|BigLogo|AirStop)$"
             }
           ]
         },

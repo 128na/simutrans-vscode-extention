@@ -1,16 +1,1 @@
-way-object
-way
-tunnel
-tree
-symbol
-smoke
-roadsign
-pedestrian
-misc
-ground
-good
-field
-factory
-crossing
-building
-bridge
+way-object|way|tunnel|tree|symbol|smoke|roadsign|pedestrian|misc|ground|good|field|factory|crossing|bridge|building

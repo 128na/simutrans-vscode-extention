@@ -14,7 +14,9 @@
   ],
   "keywords": [
     "Simutrans",
-    "dat"
+    "dat",
+    "syntax highlighting",
+    "snippets"
   ],
   "contributes": {
     "languages": [
@@ -51,7 +53,8 @@
   "homepage": "https://github.com/128na/simutrans-vscode-extention/blob/master/README.md",
   "scripts": {
     "generate:keys": "node ./src/generate_defined_keys.js",
-    "generate:dat": "node ./src/generate_example_dat.js"
+    "generate:dat": "node ./src/generate_example_dat.js",
+    "release": "vsce package"
   },
   "devDependencies": {
     "alpha-sort": "^3.0.0"
