@@ -12,3 +12,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - FIX: keywords with underscores (tram_truck, etc.) not highlighted.
 - ADD: symbol name syntax highlighting.
+
+## [0.0.3]
+
+- Deprecated in favor of [Simutrans dat_linter](https://marketplace.visualstudio.com/items?itemName=128na.simutrans-dat-linter).
